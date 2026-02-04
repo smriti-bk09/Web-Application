@@ -1,12 +1,13 @@
 
+import Register from "./component/register/Register";
 function App(){
   return(
-    <div>
-      <p> Helloooo duniyaa</p>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </div>
+       <div>
+       <Register />
+       
+       
+       </div>
   )
 }
+
 export default App;
