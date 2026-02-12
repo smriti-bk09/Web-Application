@@ -1,60 +1,63 @@
+import Input from "../input/Input";
+
 export default function Register() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-100">
-      <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-md">
-        <h1 className="text-2xl font-bold text-center mb-6">Register</h1>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-lg">
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
+          Create Account
+        </h2>
 
         <form className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-1">Username</label>
-            <input
-              type="text"
-              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Enter username"
-            />
+            <Input labelName="name" type="text" placeholder="Enter a name" />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Email</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Email Address
+            </label>
             <input
               type="email"
-              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Enter email"
+              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Enter your email"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Password</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
             <input
               type="password"
-              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Enter password"
+              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Create a password"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Confirm Password</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Confirm Password
+            </label>
             <input
               type="password"
-              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Confirm password"
+              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Confirm your password"
             />
           </div>
 
           <button
-            type="button"
-         
-            className="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700"
->
-Register
-</button>
-</form>
+            type="submit"
+            className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            Register
+          </button>
+        </form>
 
-
-<p className="text-center text-sm text-gray-600 mt-4">
-Already have an account? <span className="text-indigo-600">Login</span>
-</p>
-</div>
-</div>
-);
+        <p className="text-sm text-center text-gray-600 mt-4">
+          Already have an account? <span className="text-blue-600 cursor-pointer">Login</span>
+        </p>
+      </div>
+    </div>
+  );
 }
