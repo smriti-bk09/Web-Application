@@ -1,13 +1,11 @@
+import Login from "./component/login/Login";
 
-import Register from "./component/register/Register";
 function App(){
   return(
-       <div>
-       <Register />
-       
-       
-       </div>
-  )
+    <div>
+      <Login />
+    </div>
+  );
 }
 
 export default App;
